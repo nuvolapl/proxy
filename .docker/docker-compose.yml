@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    proxy:
+        image: '${ECS_ECR_PROXY}:latest'
+        ports:
+            - '8888'
+        build:
+            context:    '../../'
+            dockerfile: './proxy/.docker/services/proxy/Dockerfile'

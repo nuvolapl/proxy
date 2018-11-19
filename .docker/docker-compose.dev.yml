@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+    proxy:
+        ports:
+            - '8889:8888'

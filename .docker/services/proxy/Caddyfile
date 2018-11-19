@@ -1,0 +1,7 @@
+import /etc/conf.d/*
+
+*:8888 {
+    tls off
+
+    status 200 /health-check
+}
